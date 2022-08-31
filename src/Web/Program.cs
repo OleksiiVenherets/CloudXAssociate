@@ -45,6 +45,7 @@ builder.Services.AddWebServices(builder.Configuration);
 
 // Add memory cache services
 builder.Services.AddMemoryCache();
+builder.Services.AddHttpClient();
 builder.Services.AddRouting(options =>
 {
     // Replace the type and the name used to refer to it with your own
